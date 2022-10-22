@@ -1,0 +1,28 @@
+{
+  "name": "cypress-boas-praticas",
+  "version": "1.0.0",
+  "description": "Projeto de boas práticas no desenvolvimento de testes com Cypress",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open":"cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorrsbarbosa/cypress-boas-praticas.git"
+  },
+  "keywords": [
+    "cypress.io",
+    "e2e",
+    "good practices"
+  ],
+  "author": "Vitor Barbosa <vitorricardosilvabarbosa@gmail.com> (https://github.com/vitorrsbarbosa)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorrsbarbosa/cypress-boas-praticas/issues"
+  },
+  "homepage": "https://github.com/vitorrsbarbosa/cypress-boas-praticas#readme",
+  "devDependencies": {
+    "cypress": "^8.2.0",
+    "faker": "^5.5.3"
+  }
+}
