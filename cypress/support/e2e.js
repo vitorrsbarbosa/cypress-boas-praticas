@@ -1,3 +1,4 @@
+/// <reference types='cypress'/>
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.
@@ -18,3 +19,9 @@ import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+Cypress.Commands.add('search', term => {
+  cy.get('input[type="text"]')
+    .should('be.visible')
+    .clear()
+    .type(`${term}{enter}`);
+});
