@@ -7,11 +7,11 @@ describe('Sensitivve data bad practice', () => {
     cy.get('#password').type('s3Cr€7-p@s5w0rd');
   });
   it('Fills the form with sensitive data using Cypress environment', () => {
-    cy.get('#email').type(Cypress.env('CYPRESS_USER_EMAIL'));
-    cy.get('#password').type(Cypress.env('CYPRESS_USER_PASSWORD'));
+    cy.get('#email').type(Cypress.env('USER_EMAIL'));
+    cy.get('#password').type(Cypress.env('USER_PASSWORD'));
   });
   it('Fills the form with sensitive data using Cypress environment without logging data', () => {
-    cy.get('#email').type(Cypress.env('CYPRESS_USER_EMAIL'));
-    cy.get('#password').type(Cypress.env('CYPRESS_USER_PASSWORD'), { log: false });
+    cy.get('#email').type(Cypress.env('USER_EMAIL'));
+    cy.get('#password').type(Cypress.env('USER_PASSWORD'), { log: false });
   });
 });
