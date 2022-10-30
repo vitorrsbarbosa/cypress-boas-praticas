@@ -15,6 +15,7 @@ describe('Wrong abstraction bad practice', () => {
 
     cy.get('.table-row')
       .should('contain', 'Cypress');
+    cy.get('.table-row').its('length').should('be.at.least', 1);
   });
 
   it('uses custom command for assertion just for the sake of reusability', () => {
@@ -23,6 +24,7 @@ describe('Wrong abstraction bad practice', () => {
 
     cy.get('.table-row')
       .should('contain', 'Selenium');
+    cy.get('.table-row').its('length').should('be.at.least', 1);
   });
 
   it('uses custom command for assertion just for the sake of reusability', () => {
@@ -31,5 +33,6 @@ describe('Wrong abstraction bad practice', () => {
 
     cy.get('.table-row')
       .should('contain', 'Playwright');
+    cy.get('.table-row').its('length').should('be.at.least', 1);
   });
 });
