@@ -1,6 +1,6 @@
 describe('Sensitivve data bad practice', () => {
   beforeEach(() => {
-    cy.visit(`${Cypress.env('baseUrl')}/login`);
+    cy.visit(`${Cypress.env('CYPRESS_BASE_URL')}/login`);
   });
   it('Fills the form with sensitive data', () => {
     cy.get('#email').type('joe@example.com');
