@@ -36,3 +36,8 @@ Cypress.Commands.add('updateDestination', data => {
   cy.get('input[type="submit"]')
     .click();
 });
+Cypress.Commands.add('assertResults', () => {
+  cy.get('.table-row').then(rows => {
+    expect(rows.length).to.be.at.least(1);
+  });
+});
