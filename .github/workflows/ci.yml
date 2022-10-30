@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install modules
         run: npm install
-      - name: Run ESLint
-        run: npm run lint
+      # - name: Run ESLint
+      #   run: npm run lint
       - name: Run Lint:Fix
         run: npm run lint:fix
   cypress-tests-desktop:
