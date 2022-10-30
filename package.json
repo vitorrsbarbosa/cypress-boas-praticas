@@ -5,7 +5,7 @@
   "scripts": {
     "lint": "eslint cypress/**/*.js",
     "lint:fix": "eslint cypress/**/*.js --fix",
-    "test": "cypress run",
+    "test": "cypress run --record",
     "cy:open": "cypress open"
   },
   "repository": {

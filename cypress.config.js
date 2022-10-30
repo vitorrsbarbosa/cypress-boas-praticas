@@ -10,6 +10,7 @@ module.exports = defineConfig({
     },
     specPattern: 'cypress/e2e/**',
     supportFile: 'cypress/support/e2e.js',
-    experimentalSessionAndOrigin: true
+    experimentalSessionAndOrigin: true,
+    projectId: 'eiv8eg'
   },
 });
