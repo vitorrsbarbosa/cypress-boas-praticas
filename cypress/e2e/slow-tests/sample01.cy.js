@@ -1,8 +1,9 @@
-describe('Slow tests bad practice - Sample 1', () => {
+describe('Slow tests bad practice - First sample', () => {
   beforeEach(() => {
     cy.intercept(
       'GET',
-      '**/search**'
+      '**/search**',
+      { fixture: 'stories' }
     ).as('getStories');
 
     cy.visit('https://hackernews-seven.vercel.app');
@@ -22,6 +23,7 @@ describe('Slow tests bad practice - Sample 1', () => {
     cy.wait('@getStories');
 
     cy.get('.table-row')
-      .should('have.length', 100);
+      .should('have.length',
+        3);
   });
 });
